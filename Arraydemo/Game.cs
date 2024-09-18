@@ -16,15 +16,23 @@ namespace Arraydemo
     internal class Game
     {
         public void Run()
-        {
+        {   // Get value
             int[] ints = GetValues();
+            // Print array
             PrintArray(ints);
             Console.ReadKey();
             Console.WriteLine();
+            // Print array in reverse
             PrintReverse(ints);
             Console.ReadKey();
+            Console.WriteLine();
+            // Print Sum of array
             Console.WriteLine(PrintSum(ints));
+            Console.WriteLine();
+            // Print Biggest number
             Console.WriteLine(PrintHighest(ints));
+            Console.WriteLine();
+            // Print Smallest number
             Console.WriteLine(PrintLowest(ints));
 
         }
@@ -73,14 +81,42 @@ namespace Arraydemo
 
             return sum;
         }
-        int[] PrintHighest(int[] array)
+        int PrintHighest(int[] array)
         {
+            int highest = array[0];
+            for (int i =0; i < array.Length; i++)
+            {
+                if (array[i] > highest)
+                {
+                    highest = array[i];
+                }
 
-            return null;
+
+
+
+            }
+         
+
+
+
+            return highest;
         }
-        int[] PrintLowest(int[] array)
+        int PrintLowest(int[] array)
         {
-            return null;
+        
+            int lowest = array[0];
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] < lowest)
+                {
+                    lowest = array[i];
+                }
+
+
+
+
+            }
+            return lowest;
         }
         int[] PrintReverse(int[] array)
         {
