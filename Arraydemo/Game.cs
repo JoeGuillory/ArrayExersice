@@ -49,13 +49,17 @@ namespace Arraydemo
             while (i != array.Length)
             {
                 playerinput = Console.ReadLine();
-                
-                if (Int32.TryParse(playerinput, out int num))
+
+                if(Int32.TryParse(playerinput, out int num))
                 {
 
+
                   numberfrominput = num;
-    
+
                 }
+                
+   
+             
                 array[i] = numberfrominput;
                 i++;
 
