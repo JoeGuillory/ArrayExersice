@@ -23,9 +23,9 @@ namespace Arraydemo
             Console.WriteLine();
             PrintReverse(ints);
             Console.ReadKey();
-            PrintSum(ints);
-            PrintHighest(ints);
-            PrintLowest(ints);
+            Console.WriteLine(PrintSum(ints));
+            Console.WriteLine(PrintHighest(ints));
+            Console.WriteLine(PrintLowest(ints));
 
         }
         int[] GetValues()
@@ -67,7 +67,11 @@ namespace Arraydemo
         }
         int PrintSum(int[] array)
         {
-            return 0;
+            int sum;
+
+            sum = array[0] + array[1] + array[2] + array[3] + array[4];
+
+            return sum;
         }
         int[] PrintHighest(int[] array)
         {
