@@ -18,6 +18,7 @@ namespace Arraydemo
         public void Run()
         {   // Get value
             int[] ints = GetValues();
+            Console.WriteLine();
             // Print array
             PrintArray(ints);
             Console.ReadKey();
